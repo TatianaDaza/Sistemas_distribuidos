@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amsterdam Store - Popayán</title>
+    <!-- Incluye Bootstrap CSS - puedes descargarlo o usar un CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome para iconos (asegúrate de incluirlo si no lo tienes) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Tu CSS personalizado -->
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light py-3">
+        <div class="container">
+            <a class="navbar-brand h1 fw-bold" href="#">Amsterdam</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#catalogo">Catálogo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#ubicacion">Ubicación</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contacto</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ms-auto d-flex align-items-center">
+                    <li class="nav-item me-3">
+                        <a class="nav-link" href="#"><i class="fas fa-search"></i></a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i> <span class="badge bg-primary rounded-pill">99+</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fas fa-user"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Hero Section -->
+    <div class="hero-section position-relative d-flex align-items-center" style="background-color: #f8f9fa;">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <h1 class="display-4 fw-bold mb-3">Amsterdam 1.1 <span class="text-primary">Style</span></h1>
+                    <p class="lead mb-4">Tu estilo, nuestra pasión. Descubre las últimas tendencias en calzado.</p>
+                    <a href="#catalogo" class="btn btn-dark btn-lg">Explorar Catálogo</a>
+                </div>
+                <div class="col-md-6 d-flex justify-content-center">
+                    <img src="img/zapatilla-tn-negra-morada.png" class="img-fluid hero-shoe-img" alt="Zapatilla TN Negra y Morada">
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Sección de Ubicación -->
+    <section id="ubicacion" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Encuéntranos en Popayán</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <p class="text-center mb-4">
+                        Visita nuestra tienda física en el corazón de Popayán para una experiencia de compra única.
+                        Estamos ubicados en:
+                        <br>
+                        <strong>Centro Comercial Palace, Local 204 segundo piso, Popayán, Cauca.</strong>
+                    </p>
+                    <div class="map-container mb-4">
+                        <!-- Reemplaza el src con la URL de incrustación de Google Maps para el CC Palace en Popayán -->
+                        <iframe src="https://maps.app.goo.gl/z6BLWSCg4GL6Jmde6" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Catálogo -->
+    <section id="catalogo" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Nuestro Catálogo</h2>
+            <div class="row">
+                <!-- Producto 1 - En Existencia -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 product-card">
+                        <img src="img/catalogo-item1.jpg" class="card-img-top" alt="Zapatilla Deportiva Negra">
+                        <div class="card-body">
+                            <h5 class="card-title">Zapatilla Deportiva Urbana</h5>
+                            <p class="card-text text-muted">Estilo y comodidad para tu día a día.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="badge bg-success">En Existencia</span>
+                                <span class="fw-bold">$120.000 COP</span>
+                            </div>
+                            <a href="#" class="btn btn-dark mt-3 w-100">Ver Detalles</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Producto 2 - Agotado -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 product-card">
+                        <img src="img/catalogo-item2.jpg" class="card-img-top" alt="Zapatilla Alta Casual">
+                        <div class="card-body">
+                            <h5 class="card-title">Zapatilla Estilo Retro</h5>
+                            <p class="card-text text-muted">El clásico que nunca pasa de moda.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="badge bg-danger">Agotado</span>
+                                <span class="fw-bold text-decoration-line-through">$105.000 COP</span>
+                            </div>
+                            <button class="btn btn-secondary mt-3 w-100" disabled>Agotado</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Producto 3 - En Existencia -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 product-card">
+                        <img src="img/catalogo-item3.jpg" class="card-img-top" alt="Zapatilla Blanca Minimalista">
+                        <div class="card-body">
+                            <h5 class="card-title">Zapatilla Minimalista Blanca</h5>
+                            <p class="card-text text-muted">Diseño limpio y versátil.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="badge bg-success">En Existencia</span>
+                                <span class="fw-bold">$95.000 COP</span>
+                            </div>
+                            <a href="#" class="btn btn-dark mt-3 w-100">Ver Detalles</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Producto 4 - En Existencia -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 product-card">
+                        <img src="img/catalogo-item4.jpg" class="card-img-top" alt="Zapatilla para Correr">
+                        <div class="card-body">
+                            <h5 class="card-title">Zapatilla Running Confort</h5>
+                            <p class="card-text text-muted">Máximo rendimiento y amortiguación.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="badge bg-success">En Existencia</span>
+                                <span class="fw-bold">$180.000 COP</span>
+                            </div>
+                            <a href="#" class="btn btn-dark mt-3 w-100">Ver Detalles</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Producto 5 - Agotado -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 product-card">
+                        <img src="img/catalogo-item5.jpg" class="card-img-top" alt="Botín Casual">
+                        <div class="card-body">
+                            <h5 class="card-title">Botín Casual Cuero</h5>
+                            <p class="card-text text-muted">Elegancia y resistencia.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="badge bg-danger">Agotado</span>
+                                <span class="fw-bold text-decoration-line-through">$150.000 COP</span>
+                            </div>
+                            <button class="btn btn-secondary mt-3 w-100" disabled>Agotado</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Producto 6 - En Existencia -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 product-card">
+                        <img src="img/catalogo-item6.jpg" class="card-img-top" alt="Sandalias de Verano">
+                        <div class="card-body">
+                            <h5 class="card-title">Sandalias Urbanas</h5>
+                            <p class="card-text text-muted">Frescura y estilo para el verano.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="badge bg-success">En Existencia</span>
+                                <span class="fw-bold">$70.000 COP</span>
+                            </div>
+                            <a href="#" class="btn btn-dark mt-3 w-100">Ver Detalles</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <a href="#" class="btn btn-outline-dark btn-lg">Ver Más Productos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>&copy; 2023 Amsterdam Store. Todos los derechos reservados.</p>
+            <div class="social-links mt-3">
+                <a href="#" class="text-white mx-2"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="text-white mx-2"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-white mx-2"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS (bundle includes Popper) - puedes descargarlo o usar un CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
