@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Catálogo - Amsterdam Store</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/custom.css" />
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light py-3">
+        <div class="container">
+            <a class="navbar-brand h1 fw-bold" href="index.html">Amsterdam</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="shop.html">Catálogo</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Nuestro Catálogo</h2>
+            <div class="row">
+                <!-- Producto 1 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 product-card">
+                        <img src="img/catalogo-item1.jpg" class="card-img-top" alt="Zapatilla Deportiva Urbana" />
+                        <div class="card-body">
+                            <h5 class="card-title">Zapatilla Deportiva Urbana</h5>
+                            <p class="card-text text-muted">Estilo y comodidad para tu día a día.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="badge bg-success">En Existencia</span>
+                                <span class="fw-bold">$120.000 COP</span>
+                            </div>
+                            <a href="shop-single.html?product=1" class="btn btn-dark mt-3 w-100">Ver Detalles</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 product-card">
+                        <img src="img/catalogo-item2.jpg" class="card-img-top" alt="Zapatilla Estilo Retro" />
+                        <div class="card-body">
+                            <h5 class="card-title">Zapatilla Estilo Retro</h5>
+                            <p class="card-text text-muted">El clásico que nunca pasa de moda.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="badge bg-danger">Agotado</span>
+                                <span class="fw-bold text-decoration-line-through">$105.000 COP</span>
+                            </div>
+                            <button class="btn btn-secondary mt-3 w-100" disabled>Agotado</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 3 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 product-card">
+                        <img src="img/catalogo-item3.jpg" class="card-img-top" alt="Zapatilla Minimalista Blanca" />
+                        <div class="card-body">
+                            <h5 class="card-title">Zapatilla Minimalista Blanca</h5>
+                            <p class="card-text text-muted">Diseño limpio y versátil.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="badge bg-success">En Existencia</span>
+                                <span class="fw-bold">$95.000 COP</span>
+                            </div>
+                            <a href="shop-single.html?product=3" class="btn btn-dark mt-3 w-100">Ver Detalles</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Agrega más productos como desees -->
+            </div>
+            <div class="text-center mt-4">
+                <a href="#" class="btn btn-outline-dark btn-lg">Ver Más Productos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 mt-auto">
+        <div class="container text-center">
+            <p>&copy; 2023 Amsterdam Store. Todos los derechos reservados.</p>
+            <div class="social-links mt-3">
+                <a href="#" class="text-white mx-2"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="text-white mx-2"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-white mx-2"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
