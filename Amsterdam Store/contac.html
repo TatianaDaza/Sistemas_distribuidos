@@ -7,60 +7,48 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
     <style>
-        /* Colores vivos y personalización */
         body {
             font-family: 'Segoe UI', sans-serif;
             background-color: #fefefe;
         }
-
         .navbar {
             background-color: #ff4c60 !important;
         }
-
         .navbar-brand,
         .nav-link {
             color: white !important;
         }
-
         .nav-link.active {
             font-weight: bold;
             text-decoration: underline;
         }
-
         h2 {
             color: #ff4c60;
         }
-
         form {
             background-color: #fff;
             padding: 2rem;
             border-radius: 10px;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         }
-
         label {
             color: #444;
         }
-
         .btn-submit {
             background-color: #ff4c60;
             border: none;
             transition: background-color 0.3s ease;
         }
-
         .btn-submit:hover {
             background-color: #e04355;
         }
-
         footer {
             background-color: #292b2c;
         }
-
         .social-links a {
             font-size: 1.5rem;
             transition: transform 0.2s ease;
         }
-
         .social-links a:hover {
             transform: scale(1.2);
             color: #ff4c60 !important;
@@ -91,7 +79,7 @@
     <section class="py-5">
         <div class="container">
             <h2 class="text-center mb-4">Contáctanos</h2>
-            <form action="mailto:contacto@amsterdamstore.com" method="POST" enctype="text/plain" class="mx-auto" style="max-width: 600px;">
+            <form action="mailto:contacto@amsterdamstore.com" method="POST" class="mx-auto" style="max-width: 600px;" enctype="application/x-www-form-urlencoded">
                 <div class="mb-3">
                     <label for="name" class="form-label">Nombre Completo</label>
                     <input type="text" class="form-control" id="name" name="Nombre" required />

@@ -1,6 +1,6 @@
-/* Colores y Tipografía Globales */
+/* Variables de colores y tipografía global */
 :root {
-    --primary-color: #007bff; /* Color que puedes ajustar para tu marca */
+    --primary-color: #007bff;
     --secondary-color: #6c757d;
     --dark-color: #212529;
     --light-color: #f8f9fa;
@@ -12,37 +12,44 @@ body {
     font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
     color: var(--dark-color);
     line-height: 1.6;
+    background-color: var(--light-color);
 }
 
-/* Header / Navbar */
-.navbar-brand {
+/* Navbar */
+.navbar .navbar-brand {
     color: var(--dark-color) !important;
     font-size: 1.8rem;
 }
 
-.navbar-nav .nav-link {
+.navbar .nav-link {
     color: var(--dark-color) !important;
     font-weight: 500;
     margin-right: 15px;
+    transition: color 0.3s ease;
 }
 
-.navbar-nav .nav-link:hover {
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
     color: var(--primary-color) !important;
 }
 
-.navbar-nav .nav-link .badge {
-    position: relative;
-    top: -8px;
-    left: -5px;
+.navbar .nav-link .badge {
     font-size: 0.7rem;
     padding: 0.3em 0.6em;
+}
+
+/* Posición del badge del carrito */
+.navbar-nav .nav-link.position-relative .badge.position-absolute {
+    top: 0;
+    left: 100%;
+    transform: translate(-50%, -50%);
 }
 
 /* Hero Section */
 .hero-section {
     min-height: 70vh;
     padding: 80px 0;
-    overflow: hidden; /* Para asegurar que la imagen de la zapatilla no se desborde */
+    overflow: hidden;
 }
 
 .hero-section h1 {
@@ -57,8 +64,8 @@ body {
 .hero-shoe-img {
     max-width: 100%;
     height: auto;
-    transform: rotate(-15deg); /* Ligera rotación para efecto visual */
-    filter: drop-shadow(5px 5px 10px #751a521a);
+    transform: rotate(-15deg);
+    filter: drop-shadow(5px 5px 10px rgba(117, 26, 82, 0.1));
 }
 
 @media (max-width: 768px) {
@@ -67,54 +74,38 @@ body {
     }
     .hero-shoe-img {
         margin-top: 40px;
-        transform: none; /* Elimina la rotación en móviles si lo prefieres */
+        transform: none;
     }
 }
 
-/* Controles del "Slider" (simulado para el hero) */
-.carousel-control-prev,
-.carousel-control-next {
-    width: 5%;
-    background: none;
-    border: none;
-    opacity: 0.7;
-    transition: opacity 0.3s ease;
+/* Botones personalizados */
+.btn.btn-dark {
+    background-color: var(--dark-color) !important;
+    border-color: var(--dark-color) !important;
+    color: white !important;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
-.carousel-control-prev:hover,
-.carousel-control-next:hover {
-    opacity: 1;
+.btn.btn-dark:hover,
+.btn.btn-dark:focus {
+    background-color: #000000 !important;
+    border-color: #000000 !important;
+    color: white !important;
 }
 
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    background-color: var(--dark-color); /* Fondo oscuro para los iconos */
-    border-radius: 50%;
-    padding: 10px;
-    width: 40px;
-    height: 40px;
-    background-size: 50%;
+.btn-outline-dark {
+    color: var(--dark-color) !important;
+    border-color: var(--dark-color) !important;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Sección de Ubicación */
-.map-container {
-    position: relative;
-    padding-bottom: 56.25%; /* Relación de aspecto 16:9 */
-    height: 0;
-    overflow: hidden;
-    border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+.btn-outline-dark:hover,
+.btn-outline-dark:focus {
+    background-color: var(--dark-color) !important;
+    color: white !important;
 }
 
-.map-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-/* Sección de Catálogo */
+/* Product Cards */
 .product-card {
     border: none;
     box-shadow: 0 4px 15px rgba(0,0,0,0.05);
@@ -154,34 +145,15 @@ body {
 /* Footer */
 footer {
     background-color: var(--dark-color);
+    color: white;
 }
 
 footer .social-links a {
     font-size: 1.5rem;
     transition: color 0.2s ease;
+    color: white;
 }
 
 footer .social-links a:hover {
     color: var(--primary-color) !important;
-}
-
-/* Botones personalizados */
-.btn-dark {
-    background-color: var(--dark-color);
-    border-color: var(--dark-color);
-}
-
-.btn-dark:hover {
-    background-color: #000000;
-    border-color: #000000;
-}
-
-.btn-outline-dark {
-    color: var(--dark-color);
-    border-color: var(--dark-color);
-}
-
-.btn-outline-dark:hover {
-    background-color: var(--dark-color);
-    color: #fff;
 }
