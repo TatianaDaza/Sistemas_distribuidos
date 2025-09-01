@@ -5,11 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Nosotros - Amsterdam Store</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="css/custom.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <style>
+        /* Colores vivos y estilos personalizados */
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #f9f9f9;
+        }
+
+        .navbar {
+            background-color: #ff4c60 !important;
+        }
+
+        .navbar-brand,
+        .nav-link {
+            color: white !important;
+        }
+
+        .nav-link.active {
+            font-weight: bold;
+            text-decoration: underline;
+        }
+
+        h2, h3 {
+            color: #ff4c60;
+        }
+
+        .lead {
+            color: #555;
+        }
+
+        .map-container {
+            border: 4px solid #ff4c60;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        footer {
+            background-color: #292b2c;
+        }
+
+        .social-links a {
+            font-size: 1.5rem;
+            transition: transform 0.2s ease;
+        }
+
+        .social-links a:hover {
+            transform: scale(1.2);
+            color: #ff4c60 !important;
+        }
+    </style>
 </head>
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light py-3">
+    <nav class="navbar navbar-expand-lg navbar-dark py-3">
         <div class="container">
             <a class="navbar-brand h1 fw-bold" href="index.html">Amsterdam</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
@@ -27,7 +77,8 @@
         </div>
     </nav>
 
-    <section class="py-5 bg-light">
+    <!-- Sección "Nosotros" -->
+    <section class="py-5 bg-white">
         <div class="container">
             <h2 class="text-center mb-4">Sobre Amsterdam Store</h2>
             <p class="lead text-center mb-5">
@@ -40,15 +91,17 @@
                 Centro Comercial Palace, Local 204 segundo piso, Popayán, Cauca.
             </p>
 
-            <div class="map-container mx-auto" style="max-width: 800px;">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.779531406431!2d-76.60925298568811!3d2.4443750552267987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e300b41f5b44c8d%3A0x98d71c1f18cc25a8!2sCentro%20Comercial%20Palace!5e0!3m2!1ses!2sco!4v1693538042706!5m2!1ses!2sco" 
-                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <div class="map-container mx-auto">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.779531406431!2d-76.60925298568811!3d2.4443750552267987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e300b41f5b44c8d%3A0x98d71c1f18cc25a8!2sCentro%20Comercial%20Palace!5e0!3m2!1ses!2sco!4v1693538042706!5m2!1ses!2sco" 
+                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-dark text-white py-4 mt-auto">
+    <footer class="text-white py-4 mt-auto">
         <div class="container text-center">
             <p>&copy; 2023 Amsterdam Store. Todos los derechos reservados.</p>
             <div class="social-links mt-3">
